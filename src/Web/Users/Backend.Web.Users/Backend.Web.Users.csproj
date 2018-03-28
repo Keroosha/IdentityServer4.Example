@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <RuntimeFrameworkVersion>2.0.6</RuntimeFrameworkVersion>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="6.2.2" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="3.2.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="4.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore" Version="2.0.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Contexts\Users\Backend.Users.Commands\Backend.Users.Commands.csproj" />
+    <ProjectReference Include="..\..\..\Contexts\Users\Backend.Users.Queries\Backend.Users.Queries.csproj" />
+    <ProjectReference Include="..\..\..\Contexts\Users\Backend.Users.Services\Backend.Users.Services.csproj" />
+    <ProjectReference Include="..\Backend.Web.Users.ViewModels\Backend.Web.Users.ViewModels.csproj" />
+  </ItemGroup>
+
+</Project>

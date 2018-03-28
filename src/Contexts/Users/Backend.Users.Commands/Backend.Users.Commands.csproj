@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Infrastructure\Backend.Infrastructure.CQRS\Backend.Infrastructure.CQRS.csproj" />
+    <ProjectReference Include="..\Backend.Users.DataAccess\Backend.Users.DataAccess.csproj" />
+  </ItemGroup>
+
+</Project>
